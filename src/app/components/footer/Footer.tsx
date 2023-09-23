@@ -12,7 +12,7 @@ export default function Footer() {
   
    
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
+      bg='bg-canvas'
       color={useColorModeValue('gray.700', 'gray.200')}
      >
       <Container
@@ -29,11 +29,7 @@ export default function Footer() {
               alt="SVG Image"
             />
         <Text>© 2023 Saah Financial. All rights reserved</Text>
-        <Stack direction={'row'} spacing={6}>
-        <IconButton as="a" href="#" aria-label="LinkedIn" icon={<FaLinkedin />} />
-          <IconButton as="a" href="#" aria-label="GitHub" icon={<FaGithub />} />
-          <IconButton as="a" href="#" aria-label="Twitter" icon={<FaTwitter />} />
-        </Stack>
+       
       </Container>
     </Box>
  

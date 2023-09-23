@@ -21,14 +21,14 @@ import { useRef } from "react";
 import { NavItem } from "@/app/models/NavItem";
 
 const NavItems: Array<NavItem> = [
-  {
-    label: "Our Products",
-    href: "/#products",
-  },
-  {
-    label: "Partners",
-    href: "/#partners",
-  },
+  // {
+  //   label: "Our Products",
+  //   href: "/#products",
+  // },
+  // {
+  //   label: "Partners",
+  //   href: "/#partners",
+  // },
 ];
 
 export default function NavBar() {

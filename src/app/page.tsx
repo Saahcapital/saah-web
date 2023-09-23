@@ -23,6 +23,7 @@ import ProductCard from "./components/products/ProductCard";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import Footer from "./components/footer/Footer";
 import { AccordionList } from "./components/According/AccordionList";
+import { saahCapitalRoleListings } from "./components/According/saahCapitalRoleList";
 
 export default function Home() {
   return (
@@ -67,13 +68,13 @@ export default function Home() {
               </Button>
             </HStack> */}
             </Stack>
-          
+
             <Box>
               <Image
-                width='550px'
+                width="550px"
                 objectFit="cover"
                 src="/4.png"
-                alt='Saudi Investments'
+                alt="Saudi Investments"
               />
             </Box>
           </Stack>
@@ -84,7 +85,7 @@ export default function Home() {
           <Stack spacing={"6"}>
             <Heading
               as="h3"
-              size={{ base: "md", md: "md" }}
+              size={{ base: "md", md: "lg" }}
               fontWeight="extrabold"
               lineHeight="1.2"
               letterSpacing="tight"
@@ -100,21 +101,46 @@ export default function Home() {
               py={10}
               px={{ base: "5", md: "6" }}
             >
-              <ProductCard productTitle="Stock Market" />
-              <ProductCard productTitle="Mutual Funds Marketplace" />
-              <ProductCard productTitle="Indices" />
-              <ProductCard productTitle="Analysis Tools" />
+              <ProductCard productTitle="Stock Market" urlLink='/stock-market'/>
+              <ProductCard productTitle="Mutual Funds Marketplace" urlLink='/mutual-funds-marketplace' />
+              <ProductCard productTitle="Indices" urlLink='/Indices'/>
+              <ProductCard productTitle="Analysis Tools" urlLink='/analysis-tools' />
             </SimpleGrid>
           </Stack>
         </Container>
       </Box>
-
       <Box as="section" px={{ base: "4", md: "8" }} bg="bg-canvas">
+        <Container py={{ base: "10", md: "10" }} height="full">
+          <Center>
+          <SimpleGrid
+            columns={{ base: 2, md: 2 }}
+            gap={{ base: "5", md: "8" }}
+            px={{ base: "5", md: "6" }}
+          >
+            <Image
+              htmlWidth="200px" // Adjust width as needed
+              htmlHeight="200px" // Adjust height as needed
+              src="./yaqeen.png"
+              alt="SVG Image"
+            />
+            <Image
+              htmlWidth="200px" // Adjust width as needed
+              htmlHeight="200px" // Adjust height as needed
+              src="./al-rajhi.jpeg"
+              alt="SVG Image"
+            />
+         
+          </SimpleGrid>
+          </Center>
+        </Container>
+      </Box>
+
+      <Box as="section" px={{ base: "4", md: "8" }} bg="#F3F4F8">
         <Container py={{ base: "10", md: "28" }} height="full">
           <Stack spacing={"6"}>
             <Heading
               as="h3"
-              size={{ base: "md", md: "md" }}
+              size={{ base: "md", md: "lg" }}
               fontWeight="extrabold"
               lineHeight="1.2"
               letterSpacing="tight"
@@ -122,11 +148,18 @@ export default function Home() {
             >
               Saah Capitals Role
             </Heading>
-            {/* <Accordion defaultIndex={0}>
-            <AccordionList title="hello"  description="heloooooo"/>
-            <AccordionList title="hello"  description="heloooooo"/>
-            <AccordionList title="hello"  description="heloooooo"/>
-      </Accordion> */}
+
+            <Container my={10}
+      maxW={900}
+    >
+            <Accordion defaultIndex={0} allowMultiple allowToggle>
+          
+            {saahCapitalRoleListings.map((listing, id) => (
+          <AccordionList key={id} {...listing} />
+        ))}
+       
+      </Accordion>
+      </Container>
           </Stack>
         </Container>
       </Box>

@@ -27,20 +27,24 @@ import{FiCheck} from 'react-icons/fi'
 
 interface ProductCardProps {
   productTitle: string;
+  urlLink: string;
 }
 
 
-export default function ProductCard({productTitle} : ProductCardProps) {
+export default function ProductCard({productTitle, urlLink} : ProductCardProps) {
   const router = useRouter();
-
+  const handleClick = () => {
+    router.push(urlLink); // Use router.push to navigate
+  };
   return (
     <Container
-      variant="event_card"
+      
       px={0}
       py={0}
       rounded='lg'
-      shadow={{ md: "base" }}
       bg='white'
+      cursor='pointer'
+      onClick={handleClick}
     >
       <Stack spacing={5}>
         <Box position="relative">
