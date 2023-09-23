@@ -41,8 +41,8 @@ export default function NavBar() {
         <Container py="5">
           <HStack justify="space-between">
             <Image
-              htmlWidth="80px" // Adjust width as needed
-              htmlHeight="80px" // Adjust height as needed
+              htmlWidth="150px" // Adjust width as needed
+              htmlHeight="150px" // Adjust height as needed
               src="/saahLogo.svg"
               alt="SVG Image"
               onClick={() => router.push("/")}

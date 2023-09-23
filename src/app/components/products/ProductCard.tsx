@@ -64,11 +64,11 @@ export default function ProductCard({productTitle} : ProductCardProps) {
               fontWeight='bold'
               noOfLines={2}
               overflowWrap="break-word"
-              
+              textAlign='center'
             >
               {productTitle}
             </Heading>
-            <List spacing="4">
+            {/* <List spacing="4">
             <ListItem color="muted">
               <HStack spacing="2">
                 <Icon as={FiCheck} color="prime" boxSize="3" />
@@ -87,7 +87,7 @@ export default function ProductCard({productTitle} : ProductCardProps) {
                 <Text fontSize={'sm'} color='muted'>Easy for beginners, powerful for experts</Text>
               </HStack>
             </ListItem>
-            </List>
+            </List> */}
             
          
          
