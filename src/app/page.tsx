@@ -21,6 +21,7 @@ import {
 import NavBar from "./components/header/NavBar";
 import ProductCard from "./components/products/ProductCard";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -136,6 +137,7 @@ export default function Home() {
         </Container>
       </Box>
 
+<Footer/>
     </Box>
   );
 }
