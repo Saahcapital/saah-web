@@ -30,7 +30,7 @@ export default function Home() {
     <Box>
       <NavBar />
       <Box as="section" px={{ base: "4", md: "8" }}>
-        <Container py={{ base: "10", md: "24" }} height="full">
+        <Container py={{ base: "10", md: "24" }} height="full" maxW={'8xl'}>
           <Stack
             direction={{ base: "column", lg: "row" }}
             spacing={"6"}
@@ -81,7 +81,7 @@ export default function Home() {
         </Container>
       </Box>
       <Box as="section" px={{ base: "4", md: "8" }} bg="#F3F4F8">
-        <Container py={{ base: "10", md: "28" }} height="full">
+        <Container py={{ base: "10", md: "28" }} height="full" maxW={'8xl'}>
           <Stack spacing={"6"}>
             <Heading
               as="h3"
@@ -104,16 +104,16 @@ export default function Home() {
               <ProductCard productTitle="Stock Market" urlLink='/stock-market'/>
               <ProductCard productTitle="Mutual Funds Marketplace" urlLink='/mutual-funds-marketplace' />
               <ProductCard productTitle="Indices" urlLink='/Indices'/>
-              <ProductCard productTitle="Analysis Tools" urlLink='/analysis-tools' />
+              <ProductCard productTitle="Financial Analysis Tools" urlLink='/analysis-tools' />
             </SimpleGrid>
           </Stack>
         </Container>
       </Box>
-      <Box as="section" px={{ base: "4", md: "8" }} bg="bg-canvas">
-        <Container py={{ base: "10", md: "10" }} height="full">
+      <Box as="section" px={{ base: "4", md: "8" }} bg="bg-canvas" >
+        <Container py={{ base: "10", md: "10" }} height="full" maxW={'8xl'}>
           <Center>
           <SimpleGrid
-            columns={{ base: 2, md: 2 }}
+            columns={{ base: 6, md: 6 }}
             gap={{ base: "5", md: "8" }}
             px={{ base: "5", md: "6" }}
           >
@@ -122,11 +122,32 @@ export default function Home() {
               htmlHeight="200px" // Adjust height as needed
               src="./yaqeen.png"
               alt="SVG Image"
+            /> 
+            <Image
+              htmlWidth="200px" // Adjust width as needed
+              htmlHeight="200px" // Adjust height as needed
+              src="https://global-uploads.webflow.com/625ef70d6fdb0a34f296674a/626197c89fb33230f34d67a2_snb.png"
+              alt="SVG Image"
             />
             <Image
               htmlWidth="200px" // Adjust width as needed
               htmlHeight="200px" // Adjust height as needed
               src="./al-rajhi.jpeg"
+              alt="SVG Image"
+            /> <Image
+              htmlWidth="200px" // Adjust width as needed
+              htmlHeight="200px" // Adjust height as needed
+              src="https://global-uploads.webflow.com/625ef70d6fdb0a34f296674a/626197c8ef0b1e52a74384fa_arbah.png"
+              alt="SVG Image"
+            /> <Image
+              htmlWidth="200px" // Adjust width as needed
+              htmlHeight="200px" // Adjust height as needed
+              src="https://global-uploads.webflow.com/625ef70d6fdb0a34f296674a/626197c8b9e2ff1c22e09092_aljazira.png"
+              alt="SVG Image"
+            /><Image
+              htmlWidth="200px" // Adjust width as needed
+              htmlHeight="200px" // Adjust height as needed
+              src="https://global-uploads.webflow.com/625ef70d6fdb0a34f296674a/626197c88803d35c5a2af7ce_albilad.png"
               alt="SVG Image"
             />
          
@@ -136,7 +157,7 @@ export default function Home() {
       </Box>
 
       <Box as="section" px={{ base: "4", md: "8" }} bg="#F3F4F8">
-        <Container py={{ base: "10", md: "28" }} height="full">
+        <Container py={{ base: "10", md: "28" }} height="full" maxW={'8xl'}>
           <Stack spacing={"6"}>
             <Heading
               as="h3"

@@ -17,7 +17,7 @@ import {
    
     return (
       <AccordionItem p="6" border='none'   bg='white' my={3} borderRadius='lg'>
-        <AccordionButton gap={4} px="0" cursor='pointer' _hover={'none'} justifyContent='space-between'>
+        <AccordionButton gap={4} px="0" cursor='pointer'  justifyContent='space-between'>
 
           <Heading
               as="h3"

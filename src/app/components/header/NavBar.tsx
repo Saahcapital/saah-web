@@ -38,7 +38,7 @@ export default function NavBar() {
   return (
     <Box as="nav" borderBottom="1px solid #e2e8f0" position="sticky" top="0" zIndex="1000"  bg='bg-canvas' >
       <Box position="relative" zIndex="tooltip">
-        <Container py="5">
+        <Container py="5" maxW={'8xl'}>
           <HStack justify="space-between">
             <Image
               htmlWidth="150px" // Adjust width as needed
