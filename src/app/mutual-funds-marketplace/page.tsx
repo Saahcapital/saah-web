@@ -22,7 +22,7 @@ export default function Home() {
     <Box>
       <NavBar />
       <Box as="section" px={{ base: "4", md: "8" }}>
-        <Container py={{ base: "10", md: "24" }} height="full">
+        <Container py={{ base: "10", md: "24" }} height="full" maxW={'8xl'}>
           <Stack
             direction={{ base: "column", lg: "row" }}
             spacing={"6"}

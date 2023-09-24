@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <Box>
       <NavBar />
-      <Box as="section" px={{ base: "4", md: "8" }}>
-        <Container py={{ base: "10", md: "24" }} height="full">
+      <Box as="section" px={{ base: "4", md: "8" }} height={'90vh'}>
+        <Container py={{ base: "10", md: "24" }} height="full" maxW={'8xl'}>
           <Stack
             direction={{ base: "column", lg: "row" }}
             spacing={"6"}
