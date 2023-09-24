@@ -65,7 +65,9 @@ export default function NavBar() {
                 <Button
                 fontSize='lg' fontWeight={'bold'}
                   variant="primary"
-                  onClick={() => console.log("Togo contact")}
+                  as="a"
+										href="mailto:info@saah-capital.com"
+                  
                   px={6}
                 >
                   Contact

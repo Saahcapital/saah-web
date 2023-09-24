@@ -34,7 +34,8 @@ export default function MobileDrawer() {
                <Button size="lg" variant="tertiary" justifyContent="start"  onClick={() => navigateAndCloseDrawer('#sponsors')} >
                Sponsors
               </Button>
-              <Button size="lg" variant="tertiary" justifyContent="start" >
+              <Button size="lg" variant="tertiary" justifyContent="start"  as="a"
+										href="mailto:info@saah-capital.com" >
               Contact
               </Button>
                 
