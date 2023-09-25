@@ -63,17 +63,12 @@ export default function Home() {
                 Delivering trusted Saudi financial market Knowledge.
               </Text>
 
-              {/* <HStack mt={5}>
-              <Button size="lg" variant="primary" px="10"  >
-                Explore
-              </Button>
-            </HStack> */}
             </Stack>
 
             <HStack>
             <Image
-                width={{ base: "250px", md: "230px" }}
-                height={{ base: "250px", md: "450px" }}
+                width={{ base: "150px", md: "230px" }}
+                height={{ base: "290px", md: "450px" }}
                 borderRadius='lg'
                 
                 objectFit="cover"
@@ -82,7 +77,7 @@ export default function Home() {
               />
               <Image
                 width={{ base: "250px", md: "450px" }}
-                height={{ base: "250px", md: "450px" }}
+                height={{ base: "340px", md: "450px" }}
                 borderRadius='24px'
                 border='8px'
                 objectFit="cover"

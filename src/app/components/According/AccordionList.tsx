@@ -21,7 +21,7 @@ import {
 
           <Heading
               as="h3"
-              size={{ base: "md", md: "xs" }}
+              size={{ base: "xs", md: "xs" }}
               fontWeight="bold"
               lineHeight="1.2"
               letterSpacing="tight"
