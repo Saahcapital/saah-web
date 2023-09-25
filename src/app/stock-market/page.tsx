@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <Box>
       <NavBar />
-      <Box as="section" px={{ base: "4", md: "8" }}>
-        <Container py={{ base: "10", md: "24" }} height="full" maxW={'8xl'}>
+      <Box as="section" px={{ base: "4", md: "8" }} >
+        <Container py={{ base: "10", md: "24" }} height="80vh" maxW={'8xl'}>
           <Stack
             direction={{ base: "column", lg: "row" }}
             spacing={"6"}
@@ -70,14 +70,23 @@ export default function Home() {
             </List>
             </Stack>
 
-            <Box>
+            <HStack>
+            <Image
+             
+             width="250px"
+             objectFit="cover"
+             src="/stock-market-one.png"
+             alt="Saudi Investments"
+           />
               <Image
-                width="550px"
+             
+                width="250px"
                 objectFit="cover"
-                src="/4.png"
+                src="/stock-market.png"
                 alt="Saudi Investments"
-              />
-            </Box>
+              />  
+             
+            </HStack>
           </Stack>
         </Container>
       </Box>

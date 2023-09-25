@@ -41,21 +41,22 @@ export default function Home() {
             <Stack spacing={6} maxW={{ md: "4xl", lg: "3xl" }} my="auto">
               <Heading
                 as="h1"
-                size={{ base: "md", md: "xl" }}
+                size={{ base: "sm", md: "xl" }}
                 fontWeight="extrabold"
                 lineHeight="1.2"
                 letterSpacing="tight"
               >
-                Saudi Investments,
+                Sa’ah Capital,
                 <Text
-                  fontSize={{ base: "md", md: "5xl" }}
+                mt={{ base: "4", md: "2" }}
+                  fontSize={{ base: "sm", md: "3xl" }}
                   fontWeight="extrabold"
                 >
-                  Guiding your financial future.
+                  Guiding your Financial Future Through Technology
                 </Text>
               </Heading>
               <Text
-                fontSize={{ base: "md", md: "2xl" }}
+                fontSize={{ base: "sm", md: "2xl" }}
                 fontWeight="normal"
                 color="muted"
               >
@@ -71,9 +72,9 @@ export default function Home() {
 
             <Box>
               <Image
-                width="550px"
+                width={{ base: "250px", md: "450px" }}
                 objectFit="cover"
-                src="/4.png"
+                src="/main-dashbaord.png"
                 alt="Saudi Investments"
               />
             </Box>
@@ -101,10 +102,10 @@ export default function Home() {
               py={10}
               px={{ base: "5", md: "6" }}
             >
-              <ProductCard productTitle="Stock Market" urlLink='/stock-market'/>
-              <ProductCard productTitle="Mutual Funds Marketplace" urlLink='/mutual-funds-marketplace' />
-              <ProductCard productTitle="Indices" urlLink='/Indices'/>
-              <ProductCard productTitle="Financial Analysis Tools" urlLink='/analysis-tools' />
+              <ProductCard productTitle="Stock Market" urlLink='/stock-market' imageUrl='/stock-market.png'/>
+              <ProductCard productTitle="Mutual Funds Marketplace" urlLink='/mutual-funds-marketplace' imageUrl='/mutual-funds.png' />
+              <ProductCard productTitle="Indices" urlLink='/Indices' imageUrl='/index.png'/>
+              <ProductCard productTitle="Financial Analysis Tools" urlLink='/analysis-tools' imageUrl='/analytics-tool.png' />
             </SimpleGrid>
           </Stack>
         </Container>

@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Box>
       <NavBar />
-      <Box as="section" px={{ base: "4", md: "8" }} height={'90vh'}>
+      <Box as="section" px={{ base: "4", md: "8" }} height={'82vh'}>
         <Container py={{ base: "10", md: "24" }} height="full" maxW={'8xl'}>
           <Stack
             direction={{ base: "column", lg: "row" }}
@@ -56,9 +56,9 @@ export default function Home() {
 
             <Box>
               <Image
-                width="550px"
+                 width="250px"
                 objectFit="cover"
-                src="/4.png"
+                src="/index.png"
                 alt="Saudi Investments"
               />
             </Box>

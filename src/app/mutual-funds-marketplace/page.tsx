@@ -22,7 +22,7 @@ export default function Home() {
     <Box>
       <NavBar />
       <Box as="section" px={{ base: "4", md: "8" }}>
-        <Container py={{ base: "10", md: "24" }} height="full" maxW={'8xl'}>
+        <Container py={{ base: "10", md: "24" }} height="80vh" maxW={'8xl'}>
           <Stack
             direction={{ base: "column", lg: "row" }}
             spacing={"6"}
@@ -82,14 +82,23 @@ export default function Home() {
             </List>
             </Stack>
 
-            <Box>
+            <HStack>
+            <Image
+             
+             width="250px"
+             objectFit="cover"
+             src="/mutual-funds.png"
+             alt="Mutual Funds"
+           />
               <Image
-                width="550px"
+             
+                width="250px"
                 objectFit="cover"
-                src="/4.png"
-                alt="Saudi Investments"
-              />
-            </Box>
+                src="/mutual-funds-two.png"
+                alt="Mutual Funds"
+              />  
+             
+            </HStack>
           </Stack>
         </Container>
       </Box>

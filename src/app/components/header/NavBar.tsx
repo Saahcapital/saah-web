@@ -75,7 +75,16 @@ export default function NavBar() {
               </HStack>
             ) : (
               <>
-                <MobileDrawer />
+                <Button
+                fontSize='lg' fontWeight={'bold'}
+                  variant="primary"
+                  as="a"
+										href="mailto:info@saah-capital.com"
+                  
+                  px={6}
+                >
+                  Contact
+                </Button>
               </>
             )}
           </HStack>

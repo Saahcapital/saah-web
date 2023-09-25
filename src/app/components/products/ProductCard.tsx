@@ -28,10 +28,11 @@ import{FiCheck} from 'react-icons/fi'
 interface ProductCardProps {
   productTitle: string;
   urlLink: string;
+  imageUrl: string;
 }
 
 
-export default function ProductCard({productTitle, urlLink} : ProductCardProps) {
+export default function ProductCard({productTitle, urlLink,imageUrl} : ProductCardProps) {
   const router = useRouter();
   const handleClick = () => {
     router.push(urlLink); // Use router.push to navigate
@@ -40,27 +41,29 @@ export default function ProductCard({productTitle, urlLink} : ProductCardProps) 
     <Container
       
       px={0}
-      py={0}
+      py={6}
       rounded='lg'
       bg='white'
       cursor='pointer'
       onClick={handleClick}
     >
-      <Stack spacing={5}>
+      <Stack spacing={2}>
         <Box position="relative">
-          <AspectRatio ratio={3 / 2}>
+        
             <Image
-              h={10}
+            
+          h={170}
+          w='100%'
+             objectFit="contain"
               borderRadius='lg'
-              src={''}
-              alt={''}
+              src={imageUrl}
+              alt={productTitle}
               draggable="false"
               fallback={<Skeleton />}
             />
-          </AspectRatio>
-      
+        
         </Box>
-        <Stack spacing={3} p={5}>
+      
          
             <Heading
               as="h4"
@@ -72,30 +75,11 @@ export default function ProductCard({productTitle, urlLink} : ProductCardProps) 
             >
               {productTitle}
             </Heading>
-            {/* <List spacing="4">
-            <ListItem color="muted">
-              <HStack spacing="2">
-                <Icon as={FiCheck} color="prime" boxSize="3" />
-                <Text fontSize={'sm'} color='muted'>Easy for beginners, powerful for experts</Text>
-              </HStack>
-            </ListItem>
-            <ListItem color="muted">
-              <HStack spacing="2">
-                <Icon as={FiCheck} color="prime" boxSize="3" />
-                <Text fontSize={'sm'} color='muted'>Easy for beginners, powerful for experts</Text>
-              </HStack>
-            </ListItem>
-            <ListItem color="muted">
-              <HStack spacing="2">
-                <Icon as={FiCheck} color="prime" boxSize="3" />
-                <Text fontSize={'sm'} color='muted'>Easy for beginners, powerful for experts</Text>
-              </HStack>
-            </ListItem>
-            </List> */}
+         
             
+
          
-         
-        </Stack>
+       
       </Stack>
     </Container>
   );

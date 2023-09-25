@@ -28,12 +28,6 @@ export default function MobileDrawer() {
         <DrawerContent bg={useColorModeValue('gray.50', 'gray.900')}>
           <DrawerBody mt="75px" p="4">
             <Stack spacing="3" py={8} >
-              <Button size="lg" variant="tertiary" justifyContent="start"   onClick={() => navigateAndCloseDrawer('#shows')}>
-              Shows
-              </Button>
-               <Button size="lg" variant="tertiary" justifyContent="start"  onClick={() => navigateAndCloseDrawer('#sponsors')} >
-               Sponsors
-              </Button>
               <Button size="lg" variant="tertiary" justifyContent="start"  as="a"
 										href="mailto:info@saah-capital.com" >
               Contact
