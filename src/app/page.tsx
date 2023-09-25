@@ -60,7 +60,7 @@ export default function Home() {
                 fontWeight="normal"
                 color="muted"
               >
-                Delivering trusted financial market Knowledge
+                Delivering trusted Saudi financial market Knowledge.
               </Text>
 
               {/* <HStack mt={5}>
@@ -70,16 +70,27 @@ export default function Home() {
             </HStack> */}
             </Stack>
 
-            <Box>
+            <HStack>
+            <Image
+                width={{ base: "250px", md: "230px" }}
+                height={{ base: "250px", md: "450px" }}
+                borderRadius='lg'
+                
+                objectFit="cover"
+                src="/stock-market.png"
+                alt="Saudi Investments"
+              />
               <Image
                 width={{ base: "250px", md: "450px" }}
                 height={{ base: "250px", md: "450px" }}
-                borderRadius='lg'
+                borderRadius='24px'
+                border='8px'
                 objectFit="cover"
                 src="/saahcapital-dashbaord.svg"
                 alt="Saudi Investments"
               />
-            </Box>
+              
+            </HStack>
           </Stack>
         </Container>
       </Box>
