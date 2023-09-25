@@ -73,8 +73,10 @@ export default function Home() {
             <Box>
               <Image
                 width={{ base: "250px", md: "450px" }}
+                height={{ base: "250px", md: "450px" }}
+                borderRadius='lg'
                 objectFit="cover"
-                src="/main-dashbaord.png"
+                src="/saahcapital-dashbaord.svg"
                 alt="Saudi Investments"
               />
             </Box>
